@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Flex Codes • Tucson</title>
+  <meta name="theme-color" content="#0a0e1a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="icon" href="favicon.png" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="ios-header">
+      <div class="large-title">Tucson Codes</div>
+      <div class="small-title">Tucson Codes</div>
+      <div class="search-container">
+        <div class="search">
+          <input id="q" type="search" placeholder="Search address, community, code…" autocomplete="off" />
+        </div>
+      </div>
+    </header>
+
+    <div class="chips">
+      <button class="chip active" data-filter="Apartments">Apartments</button>
+      <button class="chip" data-filter="Residential">Homes</button>
+      <button class="chip" data-filter="Businesses">Businesses</button>
+      <button class="chip" data-filter="All">All</button>
+    </div>
+
+    <div class="meta">
+      <span id="counts">—</span>
+      <span class="sep">•</span>
+      <span id="lastUpdated">Loading…</span>
+    </div>
+
+    <main id="list" class="list"></main>
+    <div id="toast" class="toast"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
